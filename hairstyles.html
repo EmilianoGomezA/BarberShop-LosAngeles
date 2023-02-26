@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de cortes</title>
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/hairstyles.css">
+</head>
+<body class="static">
+    <div class="container-preloader" id="preloader">
+        <div class="container">
+            <div class="pole">
+            <div class="top"></div>
+            <div class="cilinder"></div>
+            <div class="bottom"></div>
+            </div>
+        </div>
+        <span class="loader">
+        </span>
+    </div>
+
+    <div class="main-container">
+        <!--TITULO DE LA SECCIÓN-->
+        <h1>Seleccione una categoría</h1>
+        <div class="category-container">
+            <!--LISTA DE CATEGORÍAS (GÉNEROS)-->
+            <div class="category-list">
+                <a href="#" class="category-gender category-gender-shadow" category="mens"><img src="img/genders/man_face_vector.png" alt="Hombres">Hombres</a>
+                <a href="#" class="category-gender category-gender-shadow" category="womens"><img src="img/genders/beautiful-woman-face-hand-drawn-vector-25972895.jpg" alt="Mujeres">Mujeres</a>
+                <a href="#" class="category-gender category-gender-shadow" category="boys"><img src="img/genders/boy_face_vector.png" alt="Niños">Niños</a>
+                <a href="#" class="category-gender category-gender-shadow" category="girls"><img src="img/genders/girl_face_vector.png" alt="Niñas">Niñas</a>
+            </div>
+            <!--LISTA DE SUBCATEGORÍAS (SE ACTIVAN SOLAMENTE AL PULSAR LA SECCIÓN "HOMBRES", POR DEFECTO SE SELECCIONA "CABELLO")-->
+            <div class="subcategory-list">
+                <div class="subcategory-list-group">
+                    <a href="#" class="subcategory-gender subcategory-gender-shadow" category="mens"><img src="img/subgenders/vector_men_hair.png" alt="Cabello">Cabello</a>
+                    <a href="#" class="subcategory-gender subcategory-gender-shadow" category="beards"><img src="img/subgenders/vector_men_beard.png" alt="Barba">Barba</a>
+                </div>
+            </div>
+            <!--LISTADO DE CORTES CON IMAGEN, NOMBRE Y PRECIO (SE GENERAN PONIENDO LOS DATOS EN js/data.json)-->
+            <section class="hairstyles-container" id="hairstyles-container">
+            </section>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/hairstyles.js"></script>
+    <script src="js/hairstyles_list.js"></script>
+</body>
+</html>
